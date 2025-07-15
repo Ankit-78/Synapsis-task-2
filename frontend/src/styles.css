@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef;
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form, .notes-container {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #0056b3;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #007BFF;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.notes-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-top: 10px;
+}
+
+.note-card {
+  background: #e6f7ff;
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.note-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.note-card p {
+  flex-grow: 1;
+  margin: 0 0 12px;
+}
+
+.note-card button {
+  align-self: flex-end;
+  background: #dc3545;
+  padding: 8px 16px;
+}
+.note-card button:hover {
+  background: #c82333;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .form, .notes-container {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 900px) {
+  .form, .notes-container {
+    max-width: 600px;
+  }
+}

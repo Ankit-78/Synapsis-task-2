@@ -1,0 +1,18 @@
+# .gitignore (for backend)
+
+# Node modules (auto-generated)
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output (if any)
+dist/
+build/
